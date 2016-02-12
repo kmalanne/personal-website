@@ -161,7 +161,11 @@ section h2:after {
 .section-portfolio .portfolio-item .portfolio-img {
   margin-bottom: 20px;
   width: 100%;
-  height: auto;
+  height: 400px;
+  transition: all 0.2s ease-in-out;
+}
+.section-portfolio .portfolio-item .portfolio-img:hover {
+  transform: scale(1.1);
 }
 .section-portfolio .portfolio-item .portfolio-text {
   font-size: 120%;
@@ -228,7 +232,43 @@ footer .footer-copyright p {
   header .main-navigation .navbar-brand {
     color: #000;
   }
+  header .main-navigation .navbar-default .navbar-nav > li {
+    float: left;
+    width: 50%;
+  }
   header .main-navigation .navbar-default .navbar-nav > li > a {
     color: #000;
+  }
+  header .main-navigation ul.nav a:hover {
+    border-bottom: none;
+  }
+  header .header-content .header-content-inner .header-primary {
+    font-size: 400%;
+    margin-top: 30px;
+  }
+  header .header-content .header-content-inner .header-secondary {
+    font-size: 200%;
+  }
+  section {
+    padding-top: 40px;
+  }
+  .section-portfolio .portfolio-item .portfolio-img {
+    padding: 0, 10px, 0, 10px;
+    height: 360px;
+  }
+  .section-portfolio .portfolio-item .portfolio-text {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header .header-content .header-content-inner .header-primary {
+    font-size: 200%;
+    margin-top: 60px;
+  }
+  header .header-content .header-content-inner .header-secondary {
+    font-size: 125%;
+  }
+  .section-portfolio .portfolio-item .portfolio-img {
+    height: 160px;
   }
 }
